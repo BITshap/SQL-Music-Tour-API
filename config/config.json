@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Bonzai2853",
+    "database": "client_events",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "Bonzai2853",
+    "database": "client_events_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "Bonzai2853",
+    "database": "client_events_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
