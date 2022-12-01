@@ -23,10 +23,11 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false
     },
+   }, {
     sequelize,
     modelName: 'Stage',
     tableName: 'stages',
     timestamps: false
-  });
+  })
   return Stage;
 };

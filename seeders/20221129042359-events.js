@@ -4,7 +4,6 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('events', [{
-      event_id: 1,
       event_name: 'The Beatles Concert!',
       event_start: '8:00:00',
       event_end: '9:00:00',

@@ -3,6 +3,7 @@
 const express = require('express')
 const {Sequelize} = require('sequelize')
 const app = express()
+const bands = require('./controllers/bands_controller')
 
 // CONFIGURATION / MIDDLEWARE
 require('dotenv').config()
@@ -18,6 +19,11 @@ app.get('/', (req, res) => {
         message: 'Welcome to the Tour API'
     })
 })
+
+// CONTROLLERS 
+const bandsController = require('./controllers/bands_controller')
+app.use('/bands', bandsController)
+
 
 // LISTEN
 app.listen(process.env.PORT, () => {
